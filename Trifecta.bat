@@ -6,18 +6,16 @@ title TRIFECTA
 color 0b
 echo.
 echo.
-echo ████████╗██████╗ ██╗███████╗███████╗ ██████╗████████╗ █████╗ 
-echo ╚══██╔══╝██╔══██╗██║██╔════╝██╔════╝██╔════╝╚══██╔══╝██╔══██╗
-echo    ██║   ██████╔╝██║█████╗  █████╗  ██║        ██║   ███████║
-echo    ██║   ██╔══██╗██║██╔══╝  ██╔══╝  ██║        ██║   ██╔══██║
-echo    ██║   ██║  ██║██║██║     ███████╗╚██████╗   ██║   ██║  ██║
-echo    ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝     ╚══════╝ ╚═════╝   ╚═╝   ╚═╝  ╚═╝
+echo 	████████╗██████╗ ██╗███████╗███████╗ ██████╗████████╗ █████╗ 
+echo 	╚══██╔══╝██╔══██╗██║██╔════╝██╔════╝██╔════╝╚══██╔══╝██╔══██╗
+echo 	   ██║   ██████╔╝██║█████╗  █████╗  ██║        ██║   ███████║
+echo 	   ██║   ██╔══██╗██║██╔══╝  ██╔══╝  ██║        ██║   ██╔══██║
+echo 	   ██║   ██║  ██║██║██║     ███████╗╚██████╗   ██║   ██║  ██║
+echo 	   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝     ╚══════╝ ╚═════╝   ╚═╝   ╚═╝  ╚═╝
 echo.                                                             
 echo.
 echo.
-echo TRIFECTA Search Tool by V1XX
-echo.
-echo.
+echo 	TRIFECTA Search Tool by V1XX
 echo.
 echo.
 echo.
@@ -41,7 +39,6 @@ echo  	                             @#%#@
 echo 	                              @@@@
 echo.
 @echo off
-python intro.py
 pause
 cls
 :start
@@ -56,12 +53,15 @@ echo 1. Yahoo
 echo 2. Google
 echo 3. DuckDuckGo
 echo 4. Shodan
-echo 5. Baidu
+echo 5. Swisscows
 echo 6. Bing
 echo 7. Carrot2
 echo 8. Thingful
 echo 9. Google Scholar
 echo 10. Wolfram Alpha
+echo 11. Metacrawler
+echo 12. Yandex
+echo 13. All Of The Above
 echo.
 echo.
 echo.
@@ -79,6 +79,9 @@ if %ch%==7 goto TrifectaG if NOT goto Start2
 if %ch%==8 goto TrifectaH if NOT goto Start2
 if %ch%==9 goto TrifectaI if NOT goto Start2
 if %ch%==10 goto TrifectaJ if NOT goto Start2
+if %ch%==11 goto TrifectaK if NOT goto Start2
+if %ch%==12 goto TrifectaL if NOT goto Start2
+if %ch%==13 goto TrifectaM if NOT goto Start2
 goto trifectastart
 exit
 :TrifectaA
@@ -111,3 +114,172 @@ start "" https://www.google.com/search?q="%st%"
 cls
 goto trifectastart
 
+:TrifectaC
+cls
+:start
+set st="var"
+echo DuckDuckGo, more privacy oriented search engine.
+echo Please enter your search terms below.
+echo.
+echo.
+echo.
+@echo off
+set /p st="search> "
+start "" https://duckduckgo.com/?q="%st%"
+cls
+goto trifectastart
+
+:TrifectaD
+cls
+:start
+set st="var"
+echo Shodan search engine to search for numerous types of servers.
+echo Please enter your search terms below.
+echo.
+echo.
+echo.
+@echo off
+set /p st="search> "
+start "" https://www.shodan.io/search?query="%st%"
+cls
+goto trifectastart
+
+:TrifectaE
+cls
+:start
+set st="var"
+echo Swisscows is a Swiss privacy oriented search engine.
+echo Please enter your search terms below.
+echo.
+echo.
+echo.
+@echo off
+set /p st="search> "
+start "" https://swisscows.com/web?culture=en&query="%st%"&region=en-US
+cls
+goto trifectastart
+
+:TrifectaF
+cls
+:start
+set st="var"
+echo Bing is Microsoft's search engine. I do not like it.
+echo Please enter your search terms below.
+echo.
+echo.
+echo.
+@echo off
+set /p st="search> "
+start "" https://www.bing.com/search?q="%st%"&form=QBLH&sp=-1&pq=a&sc=8-1&qs=n&sk=&cvid=964DCC37CA0543809FD5D3A64106835F
+cls
+goto trifectastart
+
+:TrifectaG
+cls
+:start
+echo Carrot2 organizes your search results into various topics.
+echo Please enter your search terms below.
+echo.
+echo.
+echo.
+@echo off
+set /p st="search> "
+start "" https://search.carrot2.org/#/search/web/"%st%"/folders
+cls
+goto trifectastart
+
+:TrifectaH
+cls
+:start
+echo Thingful is a real-time data search engine.
+echo Please enter your search terms below.
+echo.
+echo.
+echo.
+@echo off
+set /p st="search> "
+start "" https://www.thingful.net/?what="%st%"&lat=20.05593126519445&lng=-27.94921875&z=3
+cls
+goto trifectastart
+
+:TrifectaI
+cls
+:start
+echo Google scholar is Google's search engine for specific scholarly articles, documents, and papers.
+echo Please enter your search terms below.
+echo.
+echo.
+echo.
+@echo off
+set /p st="search> "
+start "" https://scholar.google.com/scholar?hl=en&as_sdt=0%2C22&q="%st%"&btnG=
+cls
+goto trifectastart
+
+:TrifectaJ
+cls
+:start
+echo Wolfram Alpha is a computational data search engine.
+echo Please enter your search terms below.
+echo.
+echo.
+echo.
+@echo off
+set /p st="search> "
+start "" https://www.wolframalpha.com/input/?i="%st%"
+cls
+goto trifectastart
+
+:TrifectaK
+cls
+:start
+echo Metacrawler is a search engine that was initially created as a metasearch engine.
+echo Please enter your search terms below.
+echo.
+echo.
+echo.
+@echo off
+set /p st="search> "
+start "" https://www.metacrawler.com/serp?q="%st%"&sc=ESnQ21Bx9v6Y10
+cls
+goto trifectastart
+
+:TrifectaL 
+cls
+:start
+echo Yandex is a powerful russian search engine.
+echo Please enter your search terms below.
+echo.
+echo.
+echo.
+@echo off
+set /p st="search> "
+start "" https://yandex.com/search/?text="%st%"&lr=110248
+cls
+goto trifectastart
+
+:TrifectaM
+cls
+:start
+set st="var"
+echo All search options.
+echo Please enter your search terms below.
+echo.
+echo.
+echo.
+@echo off
+set /p st="Search> "
+start "" https://yandex.com/search/?text="%st%"&lr=110248
+start "" https://www.metacrawler.com/serp?q="%st%"&sc=ESnQ21Bx9v6Y10
+start "" https://www.wolframalpha.com/input/?i="%st%"
+start "" https://scholar.google.com/scholar?hl=en&as_sdt=0%2C22&q="%st%"&btnG=
+start "" https://www.thingful.net/?what="%st%"&lat=20.05593126519445&lng=-27.94921875&z=3
+start "" https://search.carrot2.org/#/search/web/"%st%"/folders
+start "" https://www.bing.com/search?q="%st%"&form=QBLH&sp=-1&pq=a&sc=8-1&qs=n&sk=&cvid=964DCC37CA0543809FD5D3A64106835F
+start "" https://swisscows.com/web?culture=en&query="%st%"&region=en-US
+start "" https://www.google.com/search?q="%st%"
+start "" https://www.shodan.io/search?query="%st%"
+start "" https://duckduckgo.com/?q="%st%"
+start "" https://www.yahoo.com/search?q="%st%"
+cls
+goto trifectastart
