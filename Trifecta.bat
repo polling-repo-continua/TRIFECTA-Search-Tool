@@ -177,6 +177,7 @@ goto trifectastart
 :TrifectaG
 cls
 :start
+set st="var"
 echo Carrot2 organizes your search results into various topics.
 echo Please enter your search terms below.
 echo.
@@ -191,6 +192,7 @@ goto trifectastart
 :TrifectaH
 cls
 :start
+set st="var"
 echo Thingful is a real-time data search engine.
 echo Please enter your search terms below.
 echo.
@@ -205,6 +207,7 @@ goto trifectastart
 :TrifectaI
 cls
 :start
+set st="var"
 echo Google scholar is Google's search engine for specific scholarly articles, documents, and papers.
 echo Please enter your search terms below.
 echo.
@@ -219,6 +222,7 @@ goto trifectastart
 :TrifectaJ
 cls
 :start
+set st="var"
 echo Wolfram Alpha is a computational data search engine.
 echo Please enter your search terms below.
 echo.
@@ -233,6 +237,7 @@ goto trifectastart
 :TrifectaK
 cls
 :start
+set st="var"
 echo Metacrawler is a search engine that was initially created as a metasearch engine.
 echo Please enter your search terms below.
 echo.
@@ -247,6 +252,7 @@ goto trifectastart
 :TrifectaL 
 cls
 :start
+set st="var"
 echo Yandex is a powerful russian search engine.
 echo Please enter your search terms below.
 echo.
