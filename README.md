@@ -19,3 +19,7 @@ TRIFECTA is a batch script that allows you to search a phrase or keywords with 1
 11. Metacrawler
 12. Yandex
 13. All Of The Above
+
+
+
+Note: No longer being managed, see updated version(s)
