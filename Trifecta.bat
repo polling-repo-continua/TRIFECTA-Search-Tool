@@ -1,6 +1,6 @@
 @echo off
 chcp 65001
-:trifectastart
+:start
 cls
 title TRIFECTA
 color 0b
@@ -82,7 +82,7 @@ if %ch%==10 goto TrifectaJ if NOT goto Start2
 if %ch%==11 goto TrifectaK if NOT goto Start2
 if %ch%==12 goto TrifectaL if NOT goto Start2
 if %ch%==13 goto TrifectaM if NOT goto Start2
-goto trifectastart
+goto start
 exit
 :TrifectaA
 cls
@@ -98,7 +98,7 @@ echo.
 set /p st="Search> "
 start "" https://www.yahoo.com/search?q="%st%"
 cls 
-goto trifectastart
+goto start
 
 :TrifectaB
 cls
@@ -114,7 +114,7 @@ echo.
 set /p st="Search> "
 start "" https://www.google.com/search?q="%st%"
 cls
-goto trifectastart
+goto start
 
 :TrifectaC
 cls
@@ -130,7 +130,7 @@ echo.
 set /p st="Search> "
 start "" https://duckduckgo.com/?q="%st%"
 cls
-goto trifectastart
+goto start
 
 :TrifectaD
 cls
@@ -146,7 +146,7 @@ echo.
 set /p st="Search> "
 start "" https://www.shodan.io/search?query="%st%"
 cls
-goto trifectastart
+goto start
 
 :TrifectaE
 cls
@@ -162,7 +162,7 @@ echo.
 set /p st="Search> "
 start "" https://swisscows.com/web?culture=en&query="%st%"&region=en-US
 cls
-goto trifectastart
+goto start
 
 :TrifectaF
 cls
@@ -178,7 +178,7 @@ echo.
 set /p st="Search> "
 start "" https://www.bing.com/search?q="%st%"&form=QBLH&sp=-1&pq=a&sc=8-1&qs=n&sk=&cvid=964DCC37CA0543809FD5D3A64106835F
 cls
-goto trifectastart
+goto start
 
 :TrifectaG
 cls
@@ -194,7 +194,7 @@ echo.
 set /p st="Search> "
 start "" https://search.carrot2.org/#/search/web/"%st%"/folders
 cls
-goto trifectastart
+goto start
 
 :TrifectaH
 cls
@@ -210,7 +210,7 @@ echo.
 set /p st="Search> "
 start "" https://www.thingful.net/?what="%st%"&lat=20.05593126519445&lng=-27.94921875&z=3
 cls
-goto trifectastart
+goto start
 
 :TrifectaI
 cls
@@ -226,7 +226,7 @@ echo.
 set /p st="Search> "
 start "" https://scholar.google.com/scholar?hl=en&as_sdt=0%2C22&q="%st%"&btnG=
 cls
-goto trifectastart
+goto start
 
 :TrifectaJ
 cls
@@ -242,7 +242,7 @@ echo.
 set /p st="Search> "
 start "" https://www.wolframalpha.com/input/?i="%st%"
 cls
-goto trifectastart
+goto start
 
 :TrifectaK
 cls
@@ -258,7 +258,7 @@ echo.
 set /p st="Search> "
 start "" https://www.metacrawler.com/serp?q="%st%"&sc=ESnQ21Bx9v6Y10
 cls
-goto trifectastart
+goto start
 
 :TrifectaL 
 cls
@@ -274,7 +274,7 @@ echo.
 set /p st="Search> "
 start "" https://yandex.com/search/?text="%st%"&lr=110248
 cls
-goto trifectastart
+goto start
 
 :TrifectaM
 cls
@@ -301,4 +301,4 @@ start "" https://www.shodan.io/search?query="%st%"
 start "" https://duckduckgo.com/?q="%st%"
 start "" https://www.yahoo.com/search?q="%st%"
 cls
-goto trifectastart
+goto start
